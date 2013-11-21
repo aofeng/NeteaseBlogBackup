@@ -51,12 +51,13 @@
         </copy>
         <jar destfile="${dist_dir}/${package_name}.jar" basedir="${build_dir}/${package_name}">
             <manifest>
-                <attribute name="Built-By" value="NieYong" />
+                <attribute name="Created-By" value="NieYong, Blog http://aofengblog.blog.163.com" />
+                <attribute name="Built-By" value="NieYong, Blog http://aofengblog.blog.163.com" />
                 <attribute name="Implementation-Vendor" value="NieYong" />
                 <attribute name="Implementation-Title" value="NieYong" />
                 <attribute name="Implementation-Version" value="1.0.0" />
                 <attribute name="Main-Class" value="cn.aofeng.netease_blog_backup.NeteaseBlogBackupGui" />
-                <attribute name="Class-Path" value="lib/activation-1.1.jar lib/commons-codec-1.2.jar lib/commons-httpclient-3.1.jar lib/commons-lang-2.5.jar lib/commons-logging-1.0.4.jar lib/jtidy-1dec2009-r938.jar lib/log4j-1.2.16.jar lib/looks-2.2.2.jar lib/mail-1.4.jar lib/swing-layout-1.0.3.jar" />
+                <attribute name="Class-Path" value="lib/activation-1.1.jar lib/commons-codec-1.2.jar lib/commons-httpclient-3.1.jar lib/commons-lang-2.5.jar lib/commons-logging-1.0.4.jar lib/jtidy-1dec2009-r938.jar lib/log4j-1.2.16.jar lib/looks-2.2.2.jar lib/mail-1.4.jar lib/swing-layout-1.0.3.jar lib/aofeng-util-1.0.0.jar" />
             </manifest>
         </jar>
     </target>
