@@ -17,7 +17,7 @@ import org.apache.log4j.Logger;
 /**
  * 加密，解密，数字签名实用类.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class EncryptCodeUtils {
     

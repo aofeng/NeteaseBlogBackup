@@ -13,7 +13,7 @@ import cn.aofeng.util.Visitor;
 /**
  * 节点访问者.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class NodeVisitor<T extends Node> implements Visitor<T> {
 

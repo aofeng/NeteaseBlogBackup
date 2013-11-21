@@ -34,7 +34,7 @@ import org.apache.log4j.Logger;
 /**
  * 网易博客日志备份工具界面.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 @SuppressWarnings("serial")
 public class NeteaseBlogBackupGui extends javax.swing.JFrame {

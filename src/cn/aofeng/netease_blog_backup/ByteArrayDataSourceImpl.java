@@ -15,7 +15,7 @@ import org.apache.commons.lang.builder.ToStringStyle;
 /**
  * 字节数组数据源实现, 增加了来源URL的设置和获取, 用于在向EML写入附件时设置Header:Content-Location.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class ByteArrayDataSourceImpl extends ByteArrayDataSource {
 

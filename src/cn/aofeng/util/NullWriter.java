@@ -9,7 +9,7 @@ import java.io.Writer;
 /**
  * 空输出器, 即向它写的任何内容都直接抛弃.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class NullWriter extends Writer {
 

@@ -23,7 +23,7 @@ import cn.aofeng.util.http.MimeType;
 /**
  * URL类型节点(图片,链接)访问者.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public abstract class AbstractUrlVisitor<T extends Node> implements Visitor<T> {
 

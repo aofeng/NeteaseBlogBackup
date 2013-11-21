@@ -34,7 +34,7 @@ import org.w3c.dom.NodeList;
 /**
  * 网易博客备份工具.
  *
- * @author 聂勇 <a href="mailto:nieyong@asiainfo.com">nieyong@asiainfo.com</a>
+ * @author 聂勇 <a href="mailto:aofengblog@163.com">aofengblog@163.com</a>
  */
 public class NeteaseBlogBackup {
 	
