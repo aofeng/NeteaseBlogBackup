@@ -79,7 +79,7 @@ public class MimeMessageImpl extends MimeMessage {
     @Override
     protected void updateHeaders() throws MessagingException {
         super.updateHeaders();
-        setHeader("X-Mailer", "AofengTool-1.0");
+        setHeader("X-Mailer", "aofeng-netease-blog-backup");
     }
 
 }
