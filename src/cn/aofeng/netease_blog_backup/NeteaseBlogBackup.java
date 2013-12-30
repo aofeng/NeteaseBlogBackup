@@ -9,7 +9,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,6 +43,8 @@ public class NeteaseBlogBackup {
 	private static final Logger _logger = Logger.getLogger(NeteaseBlogBackup.class);
 
 	private final static ScriptEngine _scriptEngine = new ScriptEngineManager().getEngineByName("JavaScript");
+	
+	private final static String CHARSET_UTF8 = "UTF-8";
 	
 	/**
 	 * 每页的记录数.
@@ -90,9 +94,12 @@ public class NeteaseBlogBackup {
         
         StringBuilder scriptBuff = new StringBuilder();
         
+        Map<String, String> headers = new HashMap<String, String>();
+        headers.put("Referer", "http://api.blog.163.com/crossdomain.html");
+        headers.put("User-Agent", "aofeng-netease-blog-backup");
         try {
-        	ins = HttpUtils.getInputStream(blogLogApiUrl, "UTF-8", queryParams);
-            reader = new BufferedReader(new InputStreamReader(ins, "UTF-8"));
+        	ins = HttpUtils.getInputStream(blogLogApiUrl, CHARSET_UTF8, queryParams, headers);
+            reader = new BufferedReader(new InputStreamReader(ins, CHARSET_UTF8));
             
             char[] chars = new char[8192];
             int readNum = 0;
@@ -229,10 +236,10 @@ public class NeteaseBlogBackup {
         HtmlParser htmlParser = new HtmlParser();
         NodeList scriptNodeList = null;
         try {
-			scriptNodeList = htmlParser.parseHtml(blogProfileUrl, hostInfoXPath, "GBK", "UTF-8");
+			scriptNodeList = htmlParser.parseHtml(blogProfileUrl, hostInfoXPath, "GBK", CHARSET_UTF8);
 			
 			if (_logger.isDebugEnabled()) {
-				_logger.debug("blog profile scriptNodeList:" + new HtmlParser().dom2Xml(scriptNodeList, "UTF-8"));
+				_logger.debug("blog profile scriptNodeList:" + new HtmlParser().dom2Xml(scriptNodeList, CHARSET_UTF8));
 			}
 			
 			if (scriptNodeList.getLength() > 0) {
